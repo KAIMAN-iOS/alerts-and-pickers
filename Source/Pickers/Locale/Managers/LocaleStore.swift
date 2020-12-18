@@ -21,7 +21,7 @@ struct LocaleStore {
     }
     
     public static func getInfo(completionHandler: @escaping (FetchResults) -> ()) {
-        let bundle = Bundle(for: LocalePickerViewController.self)
+        let bundle = Bundle.module
         let path = "Countries.bundle/Data/CountryCodes"
         
         guard let jsonPath = bundle.path(forResource: path, ofType: "json"),

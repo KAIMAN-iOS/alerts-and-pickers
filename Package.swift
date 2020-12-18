@@ -24,8 +24,8 @@ let package = Package(
             ],
             sources: ["Source/"],
             resources: [
-                .process("Assets")
-//                .process("Source/Pickers/Locale/Countries.bundle")
+                .process("Assets"),
+                .process("Source/Pickers/Locale/Countries.bundle")
             ]
         )
     ]

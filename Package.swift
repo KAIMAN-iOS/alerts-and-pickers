@@ -17,7 +17,10 @@ let package = Package(
             path: ".",
             exclude: [
                 "Bundle+Resources.swift",
-                "Example"
+                "Example",
+                "README.md",
+                "LICENSE",
+                "Source/Pickers/Locale/Countries.bundle"
             ],
             sources: ["Source/"],
             resources: [

@@ -16,7 +16,7 @@ let package = Package(
             name: "AlertsAndPickers",
             path: ".",
             exclude: [
-                "Bundle+Resources.swift",
+                "Source/Bundle+Resources.swift",
                 "Example",
                 "README.md",
                 "LICENSE",

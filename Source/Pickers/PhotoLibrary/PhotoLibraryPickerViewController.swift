@@ -175,7 +175,7 @@ final class PhotoLibraryPickerViewController: UIViewController {
                 self.fetchPhotos(completionHandler: completionHandler)
             }
             
-        case .denied, .restricted:
+        case .denied, .restricted, .limited:
             /// User has denied the current app to access the contacts.
             let productName = Bundle.main.infoDictionary!["CFBundleName"]!
             let alert = UIAlertController(style: .alert, title: "Permission denied", message: "\(productName) does not have access to contacts. Please, allow the application to access to your photo library.")

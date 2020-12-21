@@ -155,7 +155,7 @@ extension UIView {
 
 // MARK: - Properties
 
-public extension UIView {
+extension UIView {
     
     /// Size of view.
     var size: CGSize {

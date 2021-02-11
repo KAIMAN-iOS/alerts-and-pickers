@@ -31,7 +31,7 @@ public extension UIView {
     
     @IBInspectable
     /// Border color of view; also inspectable from Storyboard.
-    public var borderColor: UIColor? {
+    internal var borderColor: UIColor? {
         get {
             guard let color = layer.borderColor else {
                 return nil

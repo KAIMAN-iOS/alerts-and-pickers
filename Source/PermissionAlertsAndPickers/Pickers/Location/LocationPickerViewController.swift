@@ -391,7 +391,7 @@ extension LocationPickerViewController: MKMapViewDelegate {
         button.backgroundColor = UIColor(hex: 0x007AFF)
 		button.setTitleColor(.white, for: UIControl.State())
         button.borderWidth = 2
-        button.borderColor = UIColor(hex: 0x007AFF)
+        button.layer.borderColor = UIColor(hex: 0x007AFF).cgColor
         button.cornerRadius = 5
         button.titleEdgeInsets.left = 5
         button.titleEdgeInsets.right = 5

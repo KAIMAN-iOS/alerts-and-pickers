@@ -8,25 +8,28 @@ let package = Package(
         .iOS(.v12),
     ],
     products: [
-        .library(name: "AlertsAndPickers", targets: ["AlertsAndPickers"])
+        .library(name: "AlertsAndPickers", targets: ["AlertsAndPickers"]),
+        .library(name: "PermissionAlertsAndPickers", targets: ["PermissionAlertsAndPickers"])
     ],
     dependencies: [],
     targets: [
         .target(
             name: "AlertsAndPickers",
-            path: ".",
+//            path: ".",
             exclude: [
-                "Source/Bundle+Resources.swift",
                 "Example",
                 "README.md",
                 "LICENSE",
                 "Source/Pickers/Locale/Countries.bundle"
             ],
-            sources: ["Source/"],
             resources: [
                 .process("Assets"),
                 .process("Source/Pickers/Locale/Countries.bundle")
             ]
+        ),
+        .target(
+            name: "PermissionAlertsAndPickers",
+            dependencies: ["AlertsAndPickers"]
         )
     ]
 )
